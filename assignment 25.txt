@@ -1,0 +1,331 @@
+Ans=1
+#include<iostream>
+using namespace std;
+class complex
+{
+private:
+    int real,imag;
+public:
+    void setdata(int r,int i)
+    {
+        real=r;
+        imag=i;
+    }
+    void getdata()
+    {
+        cout<<endl<<"Enter Real Or Imaginary value "<<endl;
+        cin>>real>>imag;
+    }
+    void display()
+    {
+        cout<<endl<<"Real = "<<real<<endl<<"Imaginary = "<<imag<<endl;
+    }
+};
+int main(void)
+{
+    complex c1,c2;
+    c1.setdata(35,55);
+    c1.display();
+    c2.getdata();
+    c2.display();
+    return 0;
+}
+
+Ans=2
+#include<iostream>
+using namespace std;
+class time
+{
+private:
+    int hours,minutes,sec;
+public:
+    void display()
+    {
+        cout<<endl<<" Time is = "<<hours<<"/"<<minutes<<"/"<<sec<<endl;
+    }
+    void getdata()
+    {
+        cout<<endl<<" Enter your time "<<endl;
+        cin>>hours>>minutes>>sec;
+    }
+    void setdata(int h,int m,int s)
+    {
+        hours = h;
+        minutes = m;
+        sec= s;
+    }
+};
+int main()
+{
+    time t1,t2;
+    t1.setdata(5,25,55);
+    t1.display();
+    t2.getdata();
+    t2.display();
+    return 0;
+}
+
+Ans=3
+
+#include<iostream>
+using namespace std;
+class factorial
+{
+private :
+    int a,sum=1;
+public:
+    void setdata(int aa)
+    {
+        a=aa;
+    }
+    void display()
+    {
+        cout<<endl<<a<<" "<<sum<<endl;
+    }
+    void getdata()
+    {
+        cout<<endl<<"Enter your Number "<<endl;
+        cin>>a;
+    }
+    void fact()
+    {
+        int i;
+        for( i=1;i<=a;i++)
+            sum=sum*i;
+    }
+};
+int main()
+{
+    factorial f1,f2;
+    f1.setdata(5);
+    f1.fact();
+    f1.display();
+    f2.getdata();
+    f2.fact();
+    f2.display();
+    return 0;
+}
+
+Ans=4
+
+#include<iostream>
+using namespace std;
+class Largestnumber
+{
+private :
+    int a,b,c,great;
+public:
+    void greater()
+    {
+        if(a>b)
+            if(a>c)
+                great=a;
+            else
+                great=c;
+        else if(b>c)
+                great=b;
+            else
+                great=c;
+    }
+    void setdata(int x,int y,int z)
+    {
+        a=x;
+        b=y;
+        c=z;
+    }
+    void getdata()
+    {
+        cout<<endl<<" Enter your value "<<endl;
+        cin>>a>>b>>c;
+    }
+    void display()
+    {
+        cout<<endl<<" Great Number is = "<<great<<endl;
+    }
+};
+int main()
+{
+    Largestnumber l1,l2;
+    l1.setdata(4,5,6);
+    l1.greater();
+    l1.display();
+    l2.getdata();
+    l2.greater();
+    l2.display();
+    return 0;
+}
+
+Ans=6
+
+#include<iostream>
+using namespace std;
+class square
+{
+private:
+    int square,s;
+public:
+    void square1()
+    {
+        square=s*s;
+    }
+    void display()
+    {
+        cout<<endl<<s<<" Square is "<<square<<endl;
+    }
+    void setdata(int ss)
+    {
+        s=ss;
+        square=ss;
+    }
+    void getdata()
+    {
+        cout<<" Enter your number "<<endl;
+        cin>>s;
+    }
+};
+int main()
+{
+    square c1,c2;
+    c1.setdata(4);
+    c1.square1();
+    c1.display();
+    c2.getdata();
+    c2.square1();
+    c2.display();
+    return 0;
+}
+
+Ans=5
+#include<iostream>
+using namespace std;
+
+class ReverseNumber
+{
+private :
+    int sum=0,reve,n;
+public:
+    void rev()
+    {
+        while(n)
+        {
+            reve=n%10;
+            n/=10;
+            sum=reve+(sum*10);
+        }
+    }
+    void setdata(int r)
+    {
+        n=r;
+    }
+    void display()
+    {
+        cout<<endl<<" Reverse is = "<<sum<<endl;
+    }
+    void getdata()
+    {
+        cout<<endl<<" Enter a Value "<<endl;
+        cin>>n;
+    }
+};
+int main()
+{
+    ReverseNumber rev1,rev2;
+    rev1.setdata(123456);
+    rev1.rev();
+    rev1.display();
+    rev2.getdata();
+    rev2.rev();
+    rev2.display();
+    return 0;
+}
+
+Ans=7
+
+#include<iostream>
+using namespace std;
+class Largestnumber
+{
+private :
+    int a,b,c,great;
+public:
+    void greater()
+    {
+        if(a>b)
+            if(a>c)
+                great=a;
+            else
+                great=c;
+        else if(b>c)
+                great=b;
+            else
+                great=c;
+    }
+    void setdata(int x,int y,int z)
+    {
+        a=x;
+        b=y;
+        c=z;
+    }
+    void getdata()
+    {
+        cout<<endl<<" Enter your value "<<endl;
+        cin>>a>>b>>c;
+    }
+    void display()
+    {
+        cout<<endl<<" Great Number is = "<<great<<endl;
+    }
+};
+int main()
+{
+    Largestnumber l1,l2;
+    l1.setdata(4,5,6);
+    l1.greater();
+    l1.display();
+    l2.getdata();
+    l2.greater();
+    l2.display();
+    return 0;
+}
+
+Ans=8
+
+#include<iostream>
+using namespace std;
+class Circle
+{
+private:
+    int root;
+    float i=3.14;
+    float area1;
+public:
+    void setdata(int r)
+    {
+        root=r;
+    }
+    void getdata()
+    {
+        cout<<" Enter values "<<endl;
+        cin>>root;
+    }
+    void display()
+    {
+        cout<<endl<<" Area of Circle "<<area1<<endl;
+    }
+    void area()
+    {
+        area1=3.14f*(root*root);
+    }
+};
+
+int main()
+{
+    Circle c1,c2;
+    c1.setdata(8);
+    c1.area();
+    c1.display();
+    c2.getdata();
+    c2.area();
+    c2.display();
+    return 0;
+}
